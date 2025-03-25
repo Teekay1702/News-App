@@ -1,12 +1,43 @@
-# React + Vite
+# React News App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **React-based news application** that allows users to explore the latest news headlines from various categories such as General, Business, Technology, Health, and more. The app fetches news articles from a third-party news API and displays them in a clean, responsive grid layout. 
 
-Currently, two official plugins are available:
+The app includes features like:
+- A dynamic list of news articles displaying the title, image, and short description.
+- Category filtering to display news based on selected categories.
+- A responsive navbar with a hamburger menu for easy navigation.
+- Loading spinner to indicate when data is being fetched.
+- Error handling for failed API requests.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- **Dynamic News List**: Fetches top news headlines and displays them in a grid.
+- **Category Filtering**: View news from different categories such as General, Business, Technology, Health, etc.
+- **Responsive Design**: The layout adjusts based on screen size for mobile and desktop views.
+- **Loading Spinner**: Displays a spinner while news articles are loading.
+- **Error Handling**: Displays an error message if the API request fails.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+- **React.js**: Front-end framework for building the app.
+- **News API**: Third-party API used to fetch the latest news articles.
+- **CSS**: For styling the app components.
+- **React Router**: For handling page navigation and routing.
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/react-news-app.git
+
+2. Navigate to the project directory:
+   ```bash
+   cd news-app
+
+3. Install dependencies:
+   ```bash
+   npm install
+   npm install react-router-dom
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
