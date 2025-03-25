@@ -5,7 +5,7 @@ import Navbar from './Components/Navbar/Navbar'
 import './App.css'
 
 function App() {
-  const [selectedCategory, setSelectedCategory] = useState('headlines');
+  const [selectedCategory, setSelectedCategory] = useState("general");
 
   return (
     <>
