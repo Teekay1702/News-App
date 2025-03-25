@@ -8,6 +8,7 @@
     position: sticky;
     top: 0;
     z-index: 100;
+    border-radius: 5px;
 }
 
 .logo {
@@ -45,7 +46,6 @@
     border-radius: 5px;
 }
 
-/* Mobile Menu */
 @media (max-width: 768px) {
     .hamburger {
         display: block;
