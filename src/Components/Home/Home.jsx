@@ -6,7 +6,7 @@ const Home = ({selectedCategory}) => {
 	const [articles, setArticles] = useState([]);
 	const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-	const API_KEY = import.meta.env.VITE_NEWS_API_KEY;
+	const API_KEY = "15c6a7e0b812474cb6af5dbb9df9cea1";
 
 	useEffect(() => {
 		const fetchNews = async () => {
