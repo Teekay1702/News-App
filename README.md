@@ -27,7 +27,7 @@ The app includes features like:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/react-news-app.git
+   git clone https://github.com/Teekay1702/News-App.git
 
 2. Navigate to the project directory:
    ```bash
@@ -40,4 +40,4 @@ The app includes features like:
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License.
