@@ -10,6 +10,12 @@
     margin-right: auto;
 }
 
+.news-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-6px);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
 .news-image {
     width: 100%;
     height: 200px;
@@ -30,9 +36,13 @@
 }
 
 .read-more {
-    color: #007bff;
+    color: white;
+    background-color: #57a2f1;
     text-decoration: none;
     font-weight: bold;
+    border: #007bff 1px solid;
+    padding: 5px 10px;
+    border-radius: 4px;
 }
 
 .read-more:hover {
