@@ -38,7 +38,9 @@ The app includes features like:
    npm install
    npm install react-router-dom
 
-4. Start the development server:
+4. Add a .env file in the root directory and add the API key:
+
+5. Start the development server:
    ```bash
    npm run dev
 
