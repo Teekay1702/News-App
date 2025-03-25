@@ -1,17 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './Components/Home/Home'
 import Navbar from './Components/Navbar/Navbar'
 import './App.css'
 
 function App() {
+  const [selectedCategory, setSelectedCategory] = useState('headlines');
 
   return (
     <>
       <Router>
-        <Navbar />
+        <Navbar onCategoryChange={setSelectedCategory}/>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home selectedCategory={selectedCategory} />} />
         </Routes>
       </Router>
     </>
