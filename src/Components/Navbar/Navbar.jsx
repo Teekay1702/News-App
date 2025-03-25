@@ -4,7 +4,7 @@ import "./Navbar.css";
 const Navbar = ({onCategoryChange}) => {
 	const [menuOpen, setMenuOpen] = useState(false);
 	const categories = [
-		"Headlines",
+		"General",,
 		"Business",
 		"Politics",
 		"Sports",

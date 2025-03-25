@@ -25,10 +25,7 @@ const Home = ({selectedCategory}) => {
 
 	return (
 		<div>
-			<h1>Latest {
-				selectedCategory.charAt(0).toUpperCase() + selectedCategory.slice(1)
-			}
-				News</h1>
+			<h1> {selectedCategory.charAt(0).toUpperCase() + selectedCategory.slice(1)} News</h1>
 			{
 			loading ? (
 				<div className="spinner-container">
