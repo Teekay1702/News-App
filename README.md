@@ -38,6 +38,10 @@ The app includes features like:
    npm install
    npm install react-router-dom
 
+4. Start the development server:
+   ```bash
+   npm run dev
+
 ## License
 
 This project is licensed under the MIT License.
