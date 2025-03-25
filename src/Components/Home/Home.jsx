@@ -5,6 +5,7 @@ import './Home.css'
 const Home = ({selectedCategory}) => {
 	const [articles, setArticles] = useState([]);
 	const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 	const API_KEY = import.meta.env.VITE_NEWS_API_KEY;
 
 	useEffect(() => {
@@ -12,9 +13,17 @@ const Home = ({selectedCategory}) => {
 			try {
 				setLoading(true);
 				const response = await fetch(`https://newsapi.org/v2/top-headlines?country=us&category=${selectedCategory}&apiKey=${API_KEY}`);
+                if (!response.ok) {
+					throw new Error(`Error fetching news: ${response.statusText}`);
+				}
 				const data = await response.json();
-				setArticles(data.articles);
+                if (data.articles && Array.isArray(data.articles)) {
+					setArticles(data.articles);
+				} else {
+					throw new Error('No Articles Found');
+				}
 			} catch (error) {
+                setError(error.message);
 				console.error("Error fetching news:", error);
 			} finally {
 				setLoading(false);
@@ -22,6 +31,10 @@ const Home = ({selectedCategory}) => {
 		};
 		fetchNews();
 	}, [selectedCategory])
+
+    if (error) {
+        return <div className='error'>Error: {error}</div>;
+    }
 
 	return (
 		<div>
