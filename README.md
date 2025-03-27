@@ -39,10 +39,16 @@ The app includes features like:
    npm install react-router-dom
 
 4. Add a .env file in the root directory and add the API key:
+   ```bash
+   VITE_NEWS_API_KEY=(your_api_key)
 
-5. Start the development server:
+6. Start the development server:
    ```bash
    npm run dev
+
+##Contributions
+
+Feel free to fork the project if you want more features.
 
 ## License
 
