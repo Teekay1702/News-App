@@ -30,7 +30,7 @@ const Home = ({selectedCategory}) => {
 			}
 		};
 		fetchNews();
-	}, [selectedCategory])
+	}, [API_KEY, selectedCategory])
 
     if (error) {
         return <div className='error'>Error: {error}</div>;
