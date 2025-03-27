@@ -27,3 +27,10 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 16px;
+    font-size: 36px;
+}

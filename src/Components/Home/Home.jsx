@@ -24,7 +24,7 @@ const Home = ({selectedCategory}) => {
 				}
 			} catch (error) {
                 setError(error.message);
-				console.error("Error fetching news:", error);
+				console.error("Error fetching news", error);
 			} finally {
 				setLoading(false);
 			}
@@ -33,7 +33,7 @@ const Home = ({selectedCategory}) => {
 	}, [API_KEY, selectedCategory])
 
     if (error) {
-        return <div className='error'>Error: {error}</div>;
+        return <div className='error'>{error}</div>;
     }
 
 	return (
